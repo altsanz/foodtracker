@@ -3,10 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import {MaterialModule} from '@angular/material';
+
 import './rxjs-extensions';
 import { AppComponent } from './app.component';
 import { routing, routedComponents } from './app.routing';
 import { NavBarComponent } from './navbar.component';
+
+import { RestaurantLoginComponent } from './restaurant/restaurant-login.component';
+
 import { HomeComponent } from './home.component';
 import { UsersComponent } from './users.component';
 import { UserService } from './users.service';
@@ -20,11 +25,13 @@ import { PostsComponent } from './posts.component';
     BrowserModule,
     FormsModule,
     routing,
-    HttpModule
+    HttpModule,
+    MaterialModule.forRoot()
   ],
   declarations: [
     AppComponent,
     NavBarComponent,
+    RestaurantLoginComponent,
     HomeComponent,
     UsersComponent,
     UserFormComponent,

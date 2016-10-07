@@ -1,5 +1,12 @@
 import { Routes, RouterModule } from '@angular/router';
 
+
+import { RestaurantLoginComponent } from './restaurant/restaurant-login.component';
+
+
+
+
+
 import { HomeComponent } from './home.component';
 import { UsersComponent } from './users.component';
 import { UserFormComponent } from './user-form.component';
@@ -13,25 +20,28 @@ const appRoutes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'home',
-    component: HomeComponent
+    path: 'restaurant/login',
+    component: RestaurantLoginComponent
   },
-  {
-    path: 'users',
-    component: UsersComponent
-  },
-  {
-    path: 'users/new',
-    component: UserFormComponent
-  },
-  {
-    path: 'users/:id',
-    component: UserFormComponent
-  },
-  {
-    path: 'posts',
-    component: PostsComponent
-  },
+  //   path: 'home',
+  //   component: HomeComponent
+  // },
+  // {
+  //   path: 'users',
+  //   component: UsersComponent
+  // },
+  // {
+  //   path: 'users/new',
+  //   component: UserFormComponent
+  // },
+  // {
+  //   path: 'users/:id',
+  //   component: UserFormComponent
+  // },
+  // {
+  //   path: 'posts',
+  //   component: PostsComponent
+  // },
   {
     path: 'not-found',
     component: NotFoundComponent
