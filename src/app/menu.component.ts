@@ -11,9 +11,18 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class MenuComponent { 
+    
+    actionButtonText: string;
+    private acceptPetitionLabel: string;
+    private cancelPetitionLabel: string;
 
 	url:any = "http://www.abc.es/Media/201407/10/tortilla-patata--644x362.jpg";
 
+    constructor() {
+        this.acceptPetitionLabel = 'Apúntame!',
+        this.cancelPetitionLabel = 'Desapúntame';
+        this.actionButtonText = this.acceptPetitionLabel;
+    }
 	getAlert(newMessage: any){
         alert(newMessage);
     }
@@ -25,6 +34,16 @@ export class MenuComponent {
     loadImagePreview(newImage: any) {
         this.url=newImage;
         //alert("IMAGE "+newImage + " var component="+this.url);
+    }
+
+    triggerPetition() {
+
+        if(this.actionButtonText === this.acceptPetitionLabel) {
+            this.actionButtonText = this.cancelPetitionLabel;
+        } else {
+            this.actionButtonText = this.acceptPetitionLabel;
+        }
+        
     }
 
 }
