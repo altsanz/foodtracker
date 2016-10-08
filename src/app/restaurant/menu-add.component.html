@@ -1,0 +1,40 @@
+<md-card class="demo-card demo-basic" style="width:50%; margin:auto">
+    <md-toolbar color="primary">Menu of the day</md-toolbar>
+    <md-card-content>
+        <form (ngSubmit)="save()" #menuForm="ngForm">
+            <table style="width: 100%" cellspacing="0">
+                <tr><td>
+                    <md-input class="md-input-menu" placeholder="Title" [(ngModel)]="menu.title" name="title">
+                    </md-input>
+                </td>
+                <td>
+                    <md-input placeholder="Price" [(ngModel)]="menu.price" name="price">
+                        <span md-prefix>€&nbsp;</span>
+                        <span md-suffix>,00</span>
+                    </md-input>
+                </td></tr>
+            </table>
+            <table style="width: 100%" cellspacing="0">
+                <tr><td>
+                    <md-input class="md-input-menu" placeholder="Subtitle" [(ngModel)]="menu.subtitle" name="subtitle">
+                    </md-input>
+                </td></tr>
+                
+                <tr><td>
+                    <md-input class="md-input-menu" placeholder="Description" [(ngModel)]="menu.description" name="description">
+                    </md-input>
+                </td></tr>
+                
+                
+                <tr><td>
+                    <md-input class="md-input-menu" placeholder="Image URL" [(ngModel)]="menu.img" name="img">
+                    </md-input>
+                </td></tr>
+            
+            </table>
+        <md-card-actions align="end">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </md-card-actions>
+        </form>
+    </md-card-content>
+</md-card>
