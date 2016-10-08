@@ -40,6 +40,7 @@ import { PostsComponent } from './posts.component';
     NavBarComponent,
     RestaurantLoginComponent,
     RestaurantMenuComponent,
+    ClientLoginComponent,
     MenuAddComponent,
     HomeComponent,
     UsersComponent,

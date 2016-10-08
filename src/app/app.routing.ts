@@ -19,12 +19,16 @@ import { PostsComponent } from './posts.component';
 const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: '/menu',
+    redirectTo: '/login',
     pathMatch: 'full'
   },
   {
     path: 'restaurant/login',
     component: RestaurantLoginComponent
+  },
+  {
+    path: 'login',
+    component: ClientLoginComponent
   },
 
   {
