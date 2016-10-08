@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 //import {MdIconRegistry} from '@angular/material';
 
 @Component({
-    selector: 'menu',
+    selector: 'client-menu',
     templateUrl: 'menu.component.html'
   //  viewProviders: [MdIconRegistry],
   //  directives: [MdIcon]
