@@ -1,3 +1,133 @@
+html, body, .viewport {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+      }
 
 
+.hbox {
+        /* previous syntax */
+        display: -webkit-box;
+        display:    -moz-box;
+        display:     -ms-box;
+        display:         box;
 
+        -webkit-box-orient: horizontal;
+           -moz-box-orient: horizontal;
+            -ms-box-orient: horizontal;
+                box-orient: horizontal;
+
+        /* current syntax */
+        display: -webkit-flex;
+        display:    -moz-flex;
+        display:     -ms-flex;
+        display:         flex;
+
+        -webkit-flex-direction: row;
+           -moz-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+      }
+
+      .vbox {
+        /* previous syntax */
+        display: -webkit-box;
+        display:    -moz-box;
+        display:         box;
+
+        -webkit-box-orient: vertical;
+           -moz-box-orient: vertical;
+            -ms-box-orient: vertical;
+                box-orient: vertical;
+
+        /* current syntax */
+        display: -webkit-flex;
+        display:    -moz-flex;
+        display:     -ms-flex;
+        display:         flex;
+
+        -webkit-flex-direction: column;
+           -moz-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+      }
+
+
+.display-1 {
+    font-size: 50px;
+    color: white;
+}
+
+.display-2 {
+    font-size: 20px;
+    color: white;
+}
+
+.food-content {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.food-content p {
+    color: white;
+}
+
+.food-action {
+    flex-direction: row;
+
+}
+
+.ft-button {
+
+}
+
+.main-food-image {
+    background-position: center;
+    background-size: cover;
+}
+.md-input-menu { display: flex }
+
+
+.spinner {
+  margin: 100px auto 0;
+  width: 70px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: rgb(56, 142, 60);
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}

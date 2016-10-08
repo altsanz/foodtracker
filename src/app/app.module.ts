@@ -11,9 +11,15 @@ import { routing, routedComponents } from './app.routing';
 import { NavBarComponent } from './navbar.component';
 
 import { RestaurantLoginComponent } from './restaurant/restaurant-login.component';
+<<<<<<< HEAD
 import { MenuComponent } from './menu.component';
 
+=======
+import { RestaurantMenuComponent } from './restaurant/restaurant-menu.component';
+>>>>>>> CRUD-webpack
 import { ClientLoginComponent } from './client-login.component';
+import { MenuAddComponent } from './restaurant/menu-add.component';
+import { MenuService } from './restaurant/menu.service';
 
 import { HomeComponent } from './home.component';
 import { UsersComponent } from './users.component';
@@ -35,7 +41,8 @@ import { PostsComponent } from './posts.component';
     AppComponent,
     NavBarComponent,
     RestaurantLoginComponent,
-    ClientLoginComponent,
+    RestaurantMenuComponent,
+    MenuAddComponent,
     HomeComponent,
     UsersComponent,
     UserFormComponent,
@@ -46,7 +53,8 @@ import { PostsComponent } from './posts.component';
     MenuComponent
   ],
   providers: [
-    UserService
+    UserService,
+    MenuService
   ],
   bootstrap: [AppComponent]
 })

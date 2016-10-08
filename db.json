@@ -36968,5 +36968,23 @@
       "title": "ipsam aperiam voluptates qui",
       "completed": false
     }
+  ],
+  "menus": [
+    {
+      "id": 1,
+      "title": "menu1",
+      "subtitle": "",
+      "description": "",
+      "price": "",
+      "img": ""
+    },
+    {
+      "title": "super hamburguesa",
+      "subtitle": "la más buena del mundo",
+      "description": "blabla",
+      "price": 10,
+      "img": "lll",
+      "id": 2
+    }
   ]
 }
