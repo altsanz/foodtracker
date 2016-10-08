@@ -36,6 +36,7 @@ import { PostsComponent } from './posts.component';
     AppComponent,
     NavBarComponent,
     RestaurantLoginComponent,
+    RestaurantMenuComponent,
     MenuAddComponent,
     HomeComponent,
     UsersComponent,

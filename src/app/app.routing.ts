@@ -22,6 +22,11 @@ const appRoutes: Routes = [
     path: 'restaurant/login',
     component: RestaurantLoginComponent
   },
+
+  {
+    path: 'restaurant/menu',
+    component: RestaurantMenuComponent
+  },
   {
     path: 'restaurant/menu/add',
     component: MenuAddComponent
