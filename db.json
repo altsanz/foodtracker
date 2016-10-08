@@ -36982,9 +36982,24 @@
       "title": "super hamburguesa",
       "subtitle": "la más buena del mundo",
       "description": "blabla",
-      "price": 10,
+      "price": 11,
       "img": "lll",
       "id": 2
+    },
+    {
+      "title": "2nd menu",
+      "price": 30,
+      "subtitle": "Expensive Menu",
+      "description": "Just a bit of food",
+      "img": "none",
+      "id": 3
+    },
+    {
+      "title": "Cheap menu",
+      "subtitle": "Very cheap",
+      "description": "a lot of food",
+      "img": "none",
+      "id": 4
     }
   ]
 }

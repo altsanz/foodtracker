@@ -21,24 +21,24 @@ const appRoutes: Routes = [
     component: RestaurantLoginComponent
   },
   {
-    path: 'restaurant/menu/add',
+    path: 'restaurant/menu/:type',
     component: MenuAddComponent
   },
   //   path: 'home',
   //   component: HomeComponent
   // },
-  // {
-  //   path: 'users',
-  //   component: UsersComponent
-  // },
-  // {
-  //   path: 'users/new',
-  //   component: UserFormComponent
-  // },
-  // {
-  //   path: 'users/:id',
-  //   component: UserFormComponent
-  // },
+  {
+     path: 'users',
+     component: UsersComponent
+  },
+  {
+    path: 'users/new',
+    component: UserFormComponent
+  },
+  {
+    path: 'users/:id',
+    component: UserFormComponent
+  },
   // {
   //   path: 'posts',
   //   component: PostsComponent
