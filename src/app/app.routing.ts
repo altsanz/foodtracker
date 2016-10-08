@@ -2,8 +2,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 import { RestaurantLoginComponent } from './restaurant/restaurant-login.component';
+<<<<<<< HEAD
 import { LoginComponent } from './login.component';
 import { MenuComponent } from './menu.component';
+=======
+import { ClientLoginComponent } from './client-login.component';
+>>>>>>> CRUD-webpack
 
 
 
@@ -27,11 +31,15 @@ const appRoutes: Routes = [
   },
   {
     path: 'login',
+<<<<<<< HEAD
     component: LoginComponent
   },
   {
     path: 'menu',
     component: MenuComponent
+=======
+    component: ClientLoginComponent
+>>>>>>> CRUD-webpack
   },
   //   path: 'home',
   //   component: HomeComponent
