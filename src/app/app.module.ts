@@ -11,12 +11,10 @@ import { routing, routedComponents } from './app.routing';
 import { NavBarComponent } from './navbar.component';
 
 import { RestaurantLoginComponent } from './restaurant/restaurant-login.component';
-<<<<<<< HEAD
-import { MenuComponent } from './menu.component';
 
-=======
+import { MenuComponent } from './menu.component';
 import { RestaurantMenuComponent } from './restaurant/restaurant-menu.component';
->>>>>>> CRUD-webpack
+
 import { ClientLoginComponent } from './client-login.component';
 import { MenuAddComponent } from './restaurant/menu-add.component';
 import { MenuService } from './restaurant/menu.service';

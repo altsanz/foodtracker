@@ -2,17 +2,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 import { RestaurantLoginComponent } from './restaurant/restaurant-login.component';
-<<<<<<< HEAD
+
+
 
 import { MenuComponent } from './menu.component';
-
-//import { LoginComponent } from './login.component';
-import { ClientLoginComponent } from './client-login.component';
-=======
 import { RestaurantMenuComponent } from './restaurant/restaurant-menu.component';
 import { ClientLoginComponent } from './client-login.component';
 import { MenuAddComponent } from './restaurant/menu-add.component';
->>>>>>> CRUD-webpack
 
 import { HomeComponent } from './home.component';
 import { UsersComponent } from './users.component';
