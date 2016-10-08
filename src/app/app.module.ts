@@ -11,6 +11,7 @@ import { routing, routedComponents } from './app.routing';
 import { NavBarComponent } from './navbar.component';
 
 import { RestaurantLoginComponent } from './restaurant/restaurant-login.component';
+import { ClientLoginComponent } from './client-login.component';
 
 import { HomeComponent } from './home.component';
 import { UsersComponent } from './users.component';
@@ -32,6 +33,7 @@ import { PostsComponent } from './posts.component';
     AppComponent,
     NavBarComponent,
     RestaurantLoginComponent,
+    ClientLoginComponent,
     HomeComponent,
     UsersComponent,
     UserFormComponent,
