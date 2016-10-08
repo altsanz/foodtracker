@@ -13,6 +13,8 @@ import { NavBarComponent } from './navbar.component';
 import { RestaurantLoginComponent } from './restaurant/restaurant-login.component';
 import { RestaurantMenuComponent } from './restaurant/restaurant-menu.component';
 import { ClientLoginComponent } from './client-login.component';
+import { MenuAddComponent } from './restaurant/menu-add.component';
+import { MenuService } from './restaurant/menu.service';
 
 import { HomeComponent } from './home.component';
 import { UsersComponent } from './users.component';
@@ -34,8 +36,7 @@ import { PostsComponent } from './posts.component';
     AppComponent,
     NavBarComponent,
     RestaurantLoginComponent,
-    RestaurantMenuComponent,
-    ClientLoginComponent,
+    MenuAddComponent,
     HomeComponent,
     UsersComponent,
     UserFormComponent,
@@ -45,7 +46,8 @@ import { PostsComponent } from './posts.component';
     routedComponents
   ],
   providers: [
-    UserService
+    UserService,
+    MenuService
   ],
   bootstrap: [AppComponent]
 })

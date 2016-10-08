@@ -87,3 +87,4 @@ html, body, .viewport {
     background-position: center;
     background-size: cover;
 }
+.md-input-menu { display: flex }
