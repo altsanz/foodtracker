@@ -6,9 +6,22 @@ import { Router } from '@angular/router';
     templateUrl: '/navbar.component.html'
 })
 export class NavBarComponent {
-    constructor(private router: Router) { }
+    private fullScreenRoutes: string[];
+
+    constructor(private router: Router) { 
+    	this.fullScreenRoutes = ['restaurant/login', 'login'];
+ 	}
     
     public isCurrentRoute = (route: string): boolean => {
         return this.router.isActive(route, false);
+    }
+
+    public isFullScreenRoute = (): boolean => {
+    	
+    	for (let fullScreenRoute of this.fullScreenRoutes) {
+    		if (this.router.isActive(fullScreenRoute, false)) return true;
+    	}
+    	
+    	return false;
     }
 }
