@@ -19,7 +19,6 @@ export class NavBarComponent {
     public isFullScreenRoute = (): boolean => {
     	
     	for (let fullScreenRoute of this.fullScreenRoutes) {
-    		debugger;
     		if (this.router.isActive(fullScreenRoute, false)) return true;
     	}
     	

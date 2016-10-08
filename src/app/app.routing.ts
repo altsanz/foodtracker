@@ -2,6 +2,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 import { RestaurantLoginComponent } from './restaurant/restaurant-login.component';
+import { RestaurantMenuComponent } from './restaurant/restaurant-menu.component';
 import { ClientLoginComponent } from './client-login.component';
 
 
@@ -23,6 +24,10 @@ const appRoutes: Routes = [
   {
     path: 'restaurant/login',
     component: RestaurantLoginComponent
+  },
+  {
+    path: 'restaurant/menu',
+    component: RestaurantMenuComponent
   },
   {
     path: 'login',
