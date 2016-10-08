@@ -11,7 +11,10 @@ import { routing, routedComponents } from './app.routing';
 import { NavBarComponent } from './navbar.component';
 
 import { RestaurantLoginComponent } from './restaurant/restaurant-login.component';
+
+import { MenuComponent } from './menu.component';
 import { RestaurantMenuComponent } from './restaurant/restaurant-menu.component';
+
 import { ClientLoginComponent } from './client-login.component';
 import { MenuAddComponent } from './restaurant/menu-add.component';
 import { MenuService } from './restaurant/menu.service';
@@ -45,7 +48,8 @@ import { PostsComponent } from './posts.component';
     NotFoundComponent,
     PostsComponent,
     SpinnerComponent,
-    routedComponents
+    routedComponents,
+    MenuComponent
   ],
   providers: [
     UserService,
