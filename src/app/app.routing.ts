@@ -15,7 +15,7 @@ import { PostsComponent } from './posts.component';
 const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: '/home',
+    redirectTo: '/menu',
     pathMatch: 'full'
   },
   {
