@@ -1,16 +1,19 @@
 <md-grid-list class="hbox vbox" cols="2">
-   <md-grid-tile class="main-food-image" style="background-image: url(https://static.pexels.com/photos/47725/hamburger-food-meal-tasty-47725.jpeg);"></md-grid-tile>
+   <md-grid-tile class="main-food-image">
+        <img  class="   main-food-image" src="{{menu.img}}" style="max-height:100%">   
+    </md-grid-tile>
    <md-grid-tile [style.background]="'#388e3c'">
    	<div class="food-content">
-   	<h1 class="display-1">Hamburguesa Gourmet</h1>
-   	<h2 class="display-2">*Nuestro guiño a la gastronomía hindú*</h2>
-   	<p class="food-description">Pollo al curry a la parrilla, calabacín a la plancha, tomate, chips de boniato, menta, albahaca, rúcula y salsa curry mayo</p>
+   	<h1 class="display-1">{{menu.title}}</h1>
+   	<h2 class="display-2">{{menu.subtitle}}</h2>
+   	<p class="food-description">{{menu.description}}</p>
 
-   	<p>Precio: 5.85€</p>
+   	<p>Precio: {{menu.price}}€</p>
 
    	<div class="food-action">
-   		<button md-raised-button class="md-primary md-raised ft-button" routerLink="/restaurant/menu/add">Editar</button>
-         <button md-raised-button class="md-primary md-raised ft-button">Consultar pedidos</button>
+   		<button md-raised-button class="md-primary md-raised ft-button" routerLink="/restaurant/menu/add">Añadir</button>
+   		<button md-raised-button class="md-primary md-raised ft-button" routerLink="/restaurant/menu/edit">Editar</button>
+        <button md-raised-button class="md-primary md-raised ft-button">Consultar pedidos</button>
 
    	</div>
    	</div>

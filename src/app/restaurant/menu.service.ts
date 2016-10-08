@@ -18,9 +18,9 @@ export class MenuService {
             .catch(this.handleError);
     }
 
-    getMenu(): Promise<Menu> {
+    getLastMenu(): Promise<Menu> {
         return this.getMenus().then((menus => {
-            var menu = menus[0];
+            var menu = menus[menus.length -1];
             return menu;
         }))
     }

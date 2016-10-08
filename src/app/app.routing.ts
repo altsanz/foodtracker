@@ -27,17 +27,16 @@ const appRoutes: Routes = [
     component: RestaurantLoginComponent
   },
   {
+    path: 'restaurant/menu/:type',
+    component: MenuAddComponent
+  },
+  {
     path: 'login',
     component: ClientLoginComponent
   },
-
   {
     path: 'restaurant/menu',
     component: RestaurantMenuComponent
-  },
-  {
-    path: 'restaurant/menu/add',
-    component: MenuAddComponent
   },
   {
     path: 'menu',
@@ -46,18 +45,18 @@ const appRoutes: Routes = [
   //   path: 'home',
   //   component: HomeComponent
   // },
-  // {
-  //   path: 'users',
-  //   component: UsersComponent
-  // },
-  // {
-  //   path: 'users/new',
-  //   component: UserFormComponent
-  // },
-  // {
-  //   path: 'users/:id',
-  //   component: UserFormComponent
-  // },
+  {
+     path: 'users',
+     component: UsersComponent
+  },
+  {
+    path: 'users/new',
+    component: UserFormComponent
+  },
+  {
+    path: 'users/:id',
+    component: UserFormComponent
+  },
   // {
   //   path: 'posts',
   //   component: PostsComponent
