@@ -11,6 +11,9 @@ import { routing, routedComponents } from './app.routing';
 import { NavBarComponent } from './navbar.component';
 
 import { RestaurantLoginComponent } from './restaurant/restaurant-login.component';
+import { MenuComponent } from './menu.component';
+import { LoginComponent } from './login.component';
+
 
 import { HomeComponent } from './home.component';
 import { UsersComponent } from './users.component';
@@ -38,7 +41,9 @@ import { PostsComponent } from './posts.component';
     NotFoundComponent,
     PostsComponent,
     SpinnerComponent,
-    routedComponents
+    routedComponents,
+    MenuComponent,
+    LoginComponent
   ],
   providers: [
     UserService

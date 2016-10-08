@@ -2,6 +2,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 import { RestaurantLoginComponent } from './restaurant/restaurant-login.component';
+import { LoginComponent } from './login.component';
+import { MenuComponent } from './menu.component';
 
 
 
@@ -22,6 +24,14 @@ const appRoutes: Routes = [
   {
     path: 'restaurant/login',
     component: RestaurantLoginComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
+  },
+  {
+    path: 'menu',
+    component: MenuComponent
   },
   //   path: 'home',
   //   component: HomeComponent
