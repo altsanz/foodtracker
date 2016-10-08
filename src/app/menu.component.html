@@ -1,9 +1,136 @@
-<div style="height=10px">
-    <md-grid-list cols="5" [style.background]="'lightblue'">
-        <md-grid-tile>Lunes</md-grid-tile>
-        <md-grid-tile>Martes</md-grid-tile>
-        <md-grid-tile>Miercoles</md-grid-tile>
-        <md-grid-tile>Jueves</md-grid-tile>
-        <md-grid-tile>Viernes</md-grid-tile>
-    </md-grid-list>
-</div>
+<style>
+	.card img {
+  width: 10px;
+  height: auto;
+}
+.centered-element{
+	margin:auto;
+	width:auto;
+	display:block
+}
+</style>
+
+<!-- <md-input placeholder="amount" align="end">
+  <span md-prefix>$&nbsp;</span>
+  <span md-suffix>.00</span>
+</md-input>-->
+
+
+
+<!--<div layout="row" layout-margin layout-wrap layout-align="center center">
+     <md-card flex="25">
+                <img src="http://www.salud180.com/sites/www.salud180.com/files/asado_0.jpg"/>
+     </md-card>
+</div>-->
+
+
+
+<img src="{{ url }}" class="centered-element"/>
+
+
+
+<br><br>
+
+<button md-raised-button class="centered-element">Lo quiero!</button>
+
+<br><br><br>
+
+<md-grid-list cols="5" [style.background]="'lightblue'">
+   <md-grid-tile><img (click)="loadImagePreview('http://biotrendies.com/wp-content/uploads/2015/08/comer-pizza-por-la-noche-engorda.jpg')" src="http://biotrendies.com/wp-content/uploads/2015/08/comer-pizza-por-la-noche-engorda.jpg"/></md-grid-tile>
+   <md-grid-tile><img (click)="loadImagePreview('http://www.abc.es/Media/201407/10/tortilla-patata--644x362.jpg')" src="http://www.abc.es/Media/201407/10/tortilla-patata--644x362.jpg"/></md-grid-tile>
+   <md-grid-tile><img (click)="loadImagePreview('http://www.soyentrepreneur.com/100ideas/wp-content/uploads/2009/10/comida-macrobioticar.jpg')" src="http://www.soyentrepreneur.com/100ideas/wp-content/uploads/2009/10/comida-macrobioticar.jpg"/></md-grid-tile>
+   <md-grid-tile><img (click)="loadImagePreview('http://www.salud180.com/sites/www.salud180.com/files/asado_0.jpg')" src="http://www.salud180.com/sites/www.salud180.com/files/asado_0.jpg"/></md-grid-tile>
+   <md-grid-tile><img (click)="loadImagePreview('http://www.garuyo.com/sites/default/files/mexicana_3.jpg')" src="http://www.garuyo.com/sites/default/files/mexicana_3.jpg"/></md-grid-tile>
+</md-grid-list>
+
+<md-grid-list cols="5" [style.background]="'lightred'" rowHeight="20px">
+   <md-grid-tile>Lunes</md-grid-tile>
+   <md-grid-tile>Martes</md-grid-tile>
+   <md-grid-tile>Miercoles</md-grid-tile>
+   <md-grid-tile>Jueves</md-grid-tile>
+   <md-grid-tile>Viernes</md-grid-tile>
+</md-grid-list>
+
+<button md-raised-button class="centered-element">Quiero el semanal!</button>
+
+<!--http://www.salud180.com/sites/www.salud180.com/files/134218877.jpg
+http://www.cdivanzamorano.cl/wp-content/uploads/2015/04/comida.jpg
+http://www.salud180.com/sites/www.salud180.com/files/asado_0.jpg
+http://biotrendies.com/wp-content/uploads/2015/08/comer-pizza-por-la-noche-engorda.jpg
+http://www.soyentrepreneur.com/100ideas/wp-content/uploads/2009/10/comida-macrobioticar.jpg
+http://www.bestfon.info/images/joomgallery/originals/comida_9/comida_83_20120802_1304755659.jpg
+http://www.abc.es/Media/201407/10/tortilla-patata--644x362.jpg
+https://s.gravatar.com/avatar/a8d67b7223c907727803a8e08193df8a?size=100&default=retro
+http://www.garuyo.com/sites/default/files/mexicana_3.jpg-->
+<br>
+<hr>
+<br>
+
+<button md-raised-button color="primary">PRIMARY</button>
+<button md-raised-button color="accent">ACCENT</button>
+<button md-raised-button color="warn">WARN</button>
+
+<button md-button disabled>OFF</button>
+<button md-raised-button [disabled]="isDisabled">OFF</button>
+<button md-mini-fab [disabled]="isDisabled"><md-icon>check</md-icon></button>
+
+<button md-button>FLAT</button>
+<button md-icon-button>
+   <md-icon class="md-24">favorite</md-icon>
+</button>
+<button md-fab>
+   <md-icon class="md-24">add</md-icon>
+</button>
+<button md-mini-fab>
+   <md-icon class="md-24">add</md-icon>
+</button>
+
+
+<br>
+<hr>
+<br>
+
+<md-radio-group layout="row">
+  <md-radio-button value=0 class="md-primary">On</md-radio-button>
+  <md-radio-button value=1> Off </md-radio-button>
+</md-radio-group>
+aaaaaa
+
+ <div class="md-input-underline"
+       [class.md-disabled]="disabled">
+    <span class="md-input-ripple"
+          [class.md-focused]="focused"
+          [class.md-accent]="dividerColor == 'accent'"
+          [class.md-warn]="dividerColor == 'warn'"></span>
+  </div>
+<!--<md-input-container>
+  <label>Color</label>
+  <input type="text" ng-model="color" required md-maxlength="10">
+</md-input-container>-->
+bbbbbb
+ <md-icon md-svg-icon="social:android" aria-label="android "></md-icon>
+cccccc
+<md-icon>home</md-icon>
+
+<i class="material-icons">face</i>
+<i class="material-icons md-24">face</i>
+
+<md-icon svgSrc="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQg3yeq4XerEH4SQCLw87cOq50VW0UGZglfejaEprHkGoH7tAN5hIK-cVs"></md-icon>
+
+<md-icon svgSrc="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXoJfFhJTQJf7PhUfzpEEgviH76ZyYdv1G4aGeKSkr9AmFyqwmzQ"></md-icon>
+
+
+
+<!--<p>Show Menus</p>
+<div layout="row" layout-margin layout-wrap layout-align="center center">
+  <md-card  flex="10" ng-repeat="menu in sampleMenus">
+   <md-card>
+   <img src="http://www.bestfon.info/images/joomgallery/originals/comida_9/comida_83_20120802_1304755659.jpg" class="md-card-image" alt="image caption"/>
+    <md-card-content >
+     <h2>Lunes</h2>
+     <p>paella</p>
+    </md-card-content>
+       </md-card >
+  </md-card>
+</div>-->
+
